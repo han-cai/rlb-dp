@@ -1,2 +1,2 @@
-## Reinforcement Learning to Bid in Display Advertising
+## Real-time Bidding with Reinforcement Learning in Display Advertising
 
