@@ -1,6 +1,8 @@
 import time
 
 
+print("import the settings from config file")
+
 T = 1000
 c0 = 1/32
 
