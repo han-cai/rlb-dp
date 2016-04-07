@@ -52,6 +52,6 @@ Lin on 3476 under T = 1000 and c0 = 0.03125       	  300000	     14940	      54	
 RLB on 3476 under T = 1000 and c0 = 0.03125       	  300000	     15633	      98	  733211	    5.21%	   46.90	    7.48
 ```
 Note these results are produced from a subset (the first 300,000 lines of each campaign in iPinYou) under T = 1000 and c0 = 1/32.
-For the full small-scale evaluation and large-scale evaluation, please first check our GitHub project [make-ipinyou-data](https://github.com/wnzhang/make-ipinyou-data "make-ipinyou-data") for pre-processing the [iPinYou data](http://data.computational-advertising.org "iPinYou data"). 
+For the full small-scale evaluation and large-scale evaluation, please first check the GitHub project [make-ipinyou-data](https://github.com/wnzhang/make-ipinyou-data "make-ipinyou-data") for pre-processing the [iPinYou data](http://data.computational-advertising.org "iPinYou data"). 
 After downloading the dataset, by simplying make all you can generate the standardised data.
 
