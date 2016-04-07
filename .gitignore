@@ -143,3 +143,6 @@ sympy-plots-for-*.tex/
 *__pycache__*
 *.idea*
 *.class
+
+# visual studio code
+*.db
