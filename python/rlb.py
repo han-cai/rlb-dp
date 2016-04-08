@@ -33,7 +33,7 @@ def update_value_function(m_pdf, avg_ctr, T, B):
 
 def take_action(theta_c, V, t, b):
 	a = 0
-	for delta in range(1, min(b, config.max_market_price)):
+	for delta in range(1, min(b, config.max_market_price) + 1):
 		if theta_c + V[t - 1][b - delta] - V[t - 1][b] >= 0:
 			a = delta
 		else:
