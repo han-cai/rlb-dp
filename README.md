@@ -1,6 +1,6 @@
 ## Real-time Bidding with Reinforcement Learning in Display Advertising
 
-This is a repository of the experiment code supporting the paper **Real-time Bidding with Reinforcement Learning in Display Advertising** in ECML PKDD 2016.
+This is a repository of the experiment code supporting the paper **Real-time Bidding with Reinforcement Learning in Display Advertising** in WSDM 2017.
 
 ## Small-scale Evaluation Demo
 For the demo of the small-scale evaluation, please run under the folder of **scripts**:
