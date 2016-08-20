@@ -1,1 +1,1 @@
-python3 ../python/small_scale.py
+python3 ../python/bid_ss.py
