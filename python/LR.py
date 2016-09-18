@@ -37,7 +37,9 @@ class LR:
 	@staticmethod
 	def regression(x_id, x_wt, W_lr):
 		theta_gather_weights = tf.gather(W_lr, x_id)
-		theta_weighted_gather_weights = tf.mul(theta_gather_weights, tf.reshape(x_wt, theta_gather_weights.get_shape()))
+		wt_shape = x_wt.get_shape().as_list()
+		wt_shape.append(1)
+		theta_weighted_gather_weights = tf.mul(theta_gather_weights, tf.reshape(x_wt, wt_shape))
 		theta_regression = tf.reduce_sum(theta_weighted_gather_weights, 1)
 		return theta_regression
 
