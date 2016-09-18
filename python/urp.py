@@ -78,7 +78,7 @@ def evaluate(eval_path, buf_size, batch_size, X_dim, X_field, model):
 			if 'LR' in algo:
 				feed_dict = {model.x_id: x_id,
 				             model.wt: wt}
-			pred = model.prediction.eval(feed_dict=feed_dict)
+			pred = model.prediction.eval(feed_dict=feed_dict)[0][0]
 			preds.append(pred)
 		labels.extend(buf_labels)
 

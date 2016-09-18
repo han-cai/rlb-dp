@@ -6,7 +6,7 @@ class LR:
 		self.graph = tf.Graph()
 		dim, field = dim_argv
 		with self.graph.as_default():
-			var_map = init_var_map(init_path, [("W", [dim + 1], init_argv[0][0], init_argv[0][1:])])
+			var_map = init_var_map(init_path, [("W", [dim + 1, 1], init_argv[0][0], init_argv[0][1:])])
 			self.W = tf.Variable(var_map["W"])
 
 			# single prediction channel
@@ -37,8 +37,8 @@ class LR:
 	@staticmethod
 	def regression(x_id, x_wt, W_lr):
 		theta_gather_weights = tf.gather(W_lr, x_id)
-		theta_weighted_gather_weights = tf.mul(theta_gather_weights, x_wt)
-		theta_regression = tf.reduce_sum(theta_weighted_gather_weights, 1, keep_dims=True)
+		theta_weighted_gather_weights = tf.mul(theta_gather_weights, tf.reshape(x_wt, theta_gather_weights.get_shape()))
+		theta_regression = tf.reduce_sum(theta_weighted_gather_weights, 1)
 		return theta_regression
 
 	def dump(self, model_path):
