@@ -53,5 +53,5 @@ ipinyou, camp=3476, algo=rlb, N=1000, c0=0.03125       	        113	   350000	  
 ```
 Note these results are produced from a subset (the first 350,000 lines of each campaign in iPinYou) under T = 1000 and c0 = 1/32.
 For the full small-scale evaluation and large-scale evaluation, please first check the GitHub project [make-ipinyou-data](https://github.com/wnzhang/make-ipinyou-data "make-ipinyou-data") for pre-processing the [iPinYou data](http://data.computational-advertising.org "iPinYou data"). 
-After downloading the dataset, by simplying make all you can generate the standardised data.
+After downloading the dataset, by "make all" you can generate the standardised data.
 
