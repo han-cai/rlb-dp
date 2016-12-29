@@ -146,3 +146,6 @@ sympy-plots-for-*.tex/
 
 # visual studio code
 *.db
+
+# ignore value table
+v_nb_N*.txt
